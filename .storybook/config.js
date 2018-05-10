@@ -2,10 +2,10 @@ import { configure } from "@storybook/vue";
 import Vue from "vue";
 
 // Import your custom components.
-import ModuleLibrary from "@/index";
+import VueGridStyled from "@/index";
 
 // Install this library
-Vue.use(ModuleLibrary);
+Vue.use(VueGridStyled);
 
 // Install Vue plugins
 // ex: Vue.use(vuex)

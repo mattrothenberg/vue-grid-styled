@@ -2,7 +2,7 @@ import Box from "./components/Box";
 import Flex from "./components/Flex";
 const isEmpty = val => val == null || !(Object.keys(val) || val).length;
 
-const LibraryModule = {
+const VueGridStyled = {
   Box,
   Flex,
   install(Vue, options) {
@@ -15,7 +15,7 @@ const LibraryModule = {
 };
 
 // Export library
-export default LibraryModule;
+export default VueGridStyled;
 
 // Export components
 export { Box, Flex };
