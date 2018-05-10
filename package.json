@@ -1,13 +1,16 @@
 {
   "name": "vue-grid-styled",
   "description": "Vue.js port of @jxnblk's React library, grid-styled",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "dist/vue-grid-styled.common.js",
   "module": "dist/vue-grid-styled.esm.js",
   "unpkg": "dist/vue-grid-styled.js",
   "jsdelivr": "dist/vue-grid-styled.js",
-  "files": ["src", "dist/*.js"],
+  "files": [
+    "src",
+    "dist/*.js"
+  ],
   "author": "Matt Rothenberg <mattrothenberg@gmail.com>",
   "repository": {
     "type": "git",
@@ -17,13 +20,16 @@
     "url": "https://github.com/mattrothenberg/vue-grid-styled/issues"
   },
   "homepage": "https://github.com/mattrothenberg/vue-grid-styled#readme",
-  "keywords": ["vue", "vue-component", "vue-library"],
+  "keywords": [
+    "vue",
+    "vue-component",
+    "vue-library"
+  ],
   "engines": {
     "node": ">=8.9.0"
   },
   "scripts": {
-    "build":
-      "npm run build:cjs && npm run build:es && npm run build:umd:dev && npm run build:umd:prod",
+    "build": "npm run build:cjs && npm run build:es && npm run build:umd:dev && npm run build:umd:prod",
     "build:cjs": "rollup -c --environment TARGET:cjs",
     "build:es": "rollup -c --environment TARGET:esm",
     "build:umd:dev": "rollup -c --environment TARGET:umd-dev",
@@ -81,7 +87,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,vue}": ["eslint --fix", "git add"]
+    "*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "styled-system": "^2.2.5",
