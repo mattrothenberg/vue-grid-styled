@@ -9248,6 +9248,14 @@ vue-loader@^13.6.2:
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.6.0"
 
+vue-storybook@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/vue-storybook/-/vue-storybook-0.4.0.tgz#f7b3c6c277492d52fcdb4b25733e9d9757a369e5"
+  dependencies:
+    loader-utils "^1.1.0"
+    serialize-javascript "^1.4.0"
+    vue "^2.5.16"
+
 vue-style-loader@^3.0.0:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-3.1.2.tgz#6b66ad34998fc9520c2f1e4d5fa4091641c1597a"
@@ -9282,7 +9290,7 @@ vue-template-validator@^1.1.5:
   dependencies:
     chalk "^1.1.1"
 
-vue@^2.5.13:
+vue@^2.5.13, vue@^2.5.16:
   version "2.5.16"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
 

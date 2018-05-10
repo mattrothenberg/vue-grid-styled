@@ -45,6 +45,8 @@ Vue.use(VueGridStyled, { theme });
 
 `vue-grid-styled` tries to emulate the [grid-styled API](https://github.com/jxnblk/grid-styled#box-) as closely as possible. Check it out for comprehensive documentation.
 
+One exception is that the `<v-box>` component exposes a `tag` prop that you can use to programatically assign a HTML tag (e.g., "div", "section").
+
 In a nutshell, replace the JSX syntax with Vue "binding" syntax and you should be good to go! Here are a few clarifying examples.
 
 #### Examples
@@ -56,7 +58,7 @@ In a nutshell, replace the JSX syntax with Vue "binding" syntax and you should b
 
 ```html
 <!-- VUE: Pixel Width -->
-<v-box :width="256" />
+<v-box :width="256" tag="section" />
 ```
 
 ```jsx
@@ -67,6 +69,7 @@ In a nutshell, replace the JSX syntax with Vue "binding" syntax and you should b
 ```html
 <!-- VUE: Responsive widths -->
 <v-box
+  tag="main"
   :width="[
     1/2,
     1/3,
