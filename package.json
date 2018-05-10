@@ -1,16 +1,13 @@
 {
   "name": "vue-grid-styled",
   "description": "Vue.js port of @jxnblk's React library, grid-styled",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "dist/vue-grid-styled.common.js",
   "module": "dist/vue-grid-styled.esm.js",
   "unpkg": "dist/vue-grid-styled.js",
   "jsdelivr": "dist/vue-grid-styled.js",
-  "files": [
-    "src",
-    "dist/*.js"
-  ],
+  "files": ["src", "dist/*.js"],
   "author": "Matt Rothenberg <mattrothenberg@gmail.com>",
   "repository": {
     "type": "git",
@@ -20,16 +17,13 @@
     "url": "https://github.com/mattrothenberg/vue-grid-styled/issues"
   },
   "homepage": "https://github.com/mattrothenberg/vue-grid-styled#readme",
-  "keywords": [
-    "vue",
-    "vue-component",
-    "vue-library"
-  ],
+  "keywords": ["vue", "vue-component", "vue-library"],
   "engines": {
     "node": ">=8.9.0"
   },
   "scripts": {
-    "build": "npm run build:cjs && npm run build:es && npm run build:umd:dev && npm run build:umd:prod",
+    "build":
+      "npm run build:cjs && npm run build:es && npm run build:umd:dev && npm run build:umd:prod",
     "build:cjs": "rollup -c --environment TARGET:cjs",
     "build:es": "rollup -c --environment TARGET:esm",
     "build:umd:dev": "rollup -c --environment TARGET:umd-dev",
@@ -41,16 +35,11 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint --ext .js,.vue .",
     "lint:fix": "eslint --ext .js,.vue . --fix",
-    "prepublishOnly": "npm run build",
-    "semantic-release": "semantic-release"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-conventional": "^5.2.3",
-    "@semantic-release/changelog": "^1.0.0",
-    "@semantic-release/git": "^2.0.1",
-    "@semantic-release/github": "^3.0.1",
-    "@semantic-release/npm": "^2.6.1",
     "@storybook/vue": "^3.3.3",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.2",
@@ -80,7 +69,6 @@
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-plugin-vue": "^3.0.0",
-    "semantic-release": "^15.4.0",
     "uglify-es": "^3.3.4",
     "vue": "^2.5.13",
     "vue-loader": "^13.6.2",
@@ -93,25 +81,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,vue}": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "release": {
-    "verifyConditions": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@semantic-release/github"
-    ],
-    "getLastRelease": "@semantic-release/npm",
-    "publish": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@semantic-release/github"
-    ]
+    "*.{js,vue}": ["eslint --fix", "git add"]
   },
   "dependencies": {
     "styled-system": "^2.2.5",
