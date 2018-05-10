@@ -56,10 +56,14 @@ const builds = {
 };
 
 function genConfig(name) {
+  const isUmd = ["umd-dev", "umd-prod"].includes(name);
+  const external = isUmd
+    ? null
+    : id => pack.dependencies && pack.dependencies[id];
   const opts = builds[name];
   const config = {
     input: opts.entry,
-    external: id => pack.dependencies && pack.dependencies[id], // exclude dependencies from build
+    external,
     plugins: [
       resolve({
         browser: true,
