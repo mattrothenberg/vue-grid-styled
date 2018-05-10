@@ -2,13 +2,11 @@
 
 ![Npm badge](https://img.shields.io/npm/v/vue-grid-styled.svg)
 
-> Vue.js port of @jxnblk's React library, grid-styled
-
-> Generated using [vue-cli-template-library](https://github.com/julon/vue-cli-template-library).
+> Vue.js port of @jxnblk's React library, [grid-styled](https://github.com/jxnblk/grid-styled)
 
 ## Installation
 
-```bash
+```shell
 yarn add vue-grid-styled
 ```
 
@@ -28,7 +26,7 @@ const fontSizes = [12, 14, 16, 20, 24, 32, 48, 64, 72];
 const space = [0, 4, 8, 16, 32, 64, 128, 256, 512];
 ```
 
-## Usage
+## Import & Install
 
 ```js
 import VueGridStyled from "vue-grid-styled";
@@ -43,9 +41,52 @@ const theme = {
 Vue.use(VueGridStyled, { theme });
 ```
 
-## Changelog
+## Component Usage
 
-See the GitHub [release history](https://github.com/user/repository/releases).
+`vue-grid-styled` tries to emulate the [grid-styled API](https://github.com/jxnblk/grid-styled#box-) as closely as possible. Check it out for comprehensive documentation.
+
+In a nutshell, replace the JSX syntax with Vue "binding" syntax and you should be good to go! Here are a few clarifying examples.
+
+#### Examples
+
+```jsx
+// Grid-Styled JSX: Pixel Width
+<Box width={256} />
+```
+
+```html
+<!-- VUE: Pixel Width -->
+<v-box :width="256" />
+```
+
+```jsx
+// JSX: Responsive Widths
+<Box width={[1 / 2, 1 / 3, 1 / 4, 1 / 6]} />
+```
+
+```html
+<!-- VUE: Responsive widths -->
+<v-box
+  :width="[
+    1/2,
+    1/3,
+    1/4,
+    1/6
+  ]"
+/>
+```
+
+```html
+<!-- Altogther now! -->
+<v-flex flexWrap="wrap" maxWidth="960px" mx="auto">
+  <v-box :width="[1, 1/2]" :px="[0, 1]" :mb="2">
+    <v-box bg="aliceblue" :py="4"/>
+  </v-box>
+  <v-box :width="[1, 1/2]" :px="[0, 1]" :mb="2">
+    <v-box bg="aliceblue" :py="4"/>
+  </v-box>
+</v-flex>
+```
 
 ## Contributing
 
