@@ -1,7 +1,7 @@
 {
   "name": "vue-grid-styled",
   "description": "Vue.js port of @jxnblk's React library, grid-styled",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "dist/vue-grid-styled.common.js",
   "module": "dist/vue-grid-styled.esm.js",
