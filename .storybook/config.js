@@ -5,12 +5,14 @@ import Vue from "vue";
 import VueGridStyled from "@/index";
 
 // Install this library
-Vue.use(VueGridStyled);
+Vue.use(VueGridStyled, {
+  theme: {
+    colors: {
+      red: "salmon"
+    }
+  }
+});
 
-// Install Vue plugins
-// ex: Vue.use(vuex)
-
-// Load stories
 const req = require.context("../stories", true, /\.stories\.js$/);
 function loadStories() {
   req.keys().forEach(filename => req(filename));

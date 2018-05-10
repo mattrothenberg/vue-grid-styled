@@ -9,6 +9,7 @@ const VueGridStyled = {
     Vue.component("v-box", Box);
     Vue.component("v-flex", Flex);
     if (!isEmpty(options) && options.hasOwnProperty("theme")) {
+      /* eslint-disable */
       Vue.prototype.$vgsTheme = options.theme;
     }
   }
