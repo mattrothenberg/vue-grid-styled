@@ -34,7 +34,7 @@ const flexStyles = props => [
 
 const Box = (props, theme) => {
   const tag = props.tag ? props.tag : "div";
-  const themedProps = { ...props, theme };
+  const themedProps = Object.assign({}, props, { theme });
   return styled(tag)(
     [],
     { boxSizing: "border-box" },
