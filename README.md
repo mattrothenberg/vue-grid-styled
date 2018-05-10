@@ -30,6 +30,8 @@ const space = [0, 4, 8, 16, 32, 64, 128, 256, 512];
 
 ```js
 import VueGridStyled from "vue-grid-styled";
+// OR
+import { Box, Flex } from "vue-grid-styled";
 
 // OPTIONAL: Pass a custom theme
 const theme = {
@@ -39,6 +41,9 @@ const theme = {
 };
 
 Vue.use(VueGridStyled, { theme });
+// OR
+Vue.component("v-box", Box);
+Vue.component("v-flex", Flex);
 ```
 
 ## Component Usage
