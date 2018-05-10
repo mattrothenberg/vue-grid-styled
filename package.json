@@ -11,12 +11,12 @@
   "author": "Matt Rothenberg <mattrothenberg@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/user/repository.git"
+    "url": "https://github.com/mattrothenberg/vue-vue-grid-styled.git"
   },
   "bugs": {
-    "url": "https://github.com/user/repository/issues"
+    "url": "https://github.com/mattrothenberg/vue-vue-grid-styled/issues"
   },
-  "homepage": "https://github.com/user/repository#readme",
+  "homepage": "https://github.com/mattrothenberg/vue-vue-grid-styled#readme",
   "keywords": ["vue", "vue-component", "vue-library"],
   "engines": {
     "node": ">=8.9.0"
@@ -74,7 +74,7 @@
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "rollup-plugin-vue": "^3.0.0",
-    "semantic-release": "^12.2.2",
+    "semantic-release": "^15.4.0",
     "uglify-es": "^3.3.4",
     "vue": "^2.5.13",
     "vue-loader": "^13.6.2",
