@@ -30,7 +30,7 @@
   </v-flex>
 </story>
 
-<story name="Widths">
+<story name="Width">
   <v-flex flexDirection="column">
     <v-box
       bg="red"
