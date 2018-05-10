@@ -11,12 +11,12 @@
   "author": "Matt Rothenberg <mattrothenberg@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/user/repository.git"
+    "url": "https://github.com/mattrothenberg/vue-grid-styled.git"
   },
   "bugs": {
-    "url": "https://github.com/user/repository/issues"
+    "url": "https://github.com/mattrothenberg/vue-grid-styled/issues"
   },
-  "homepage": "https://github.com/user/repository#readme",
+  "homepage": "https://github.com/mattrothenberg/vue-grid-styled#readme",
   "keywords": ["vue", "vue-component", "vue-library"],
   "engines": {
     "node": ">=8.9.0"
