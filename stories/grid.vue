@@ -33,7 +33,7 @@
 <story name="Widths">
   <v-flex flexDirection="column">
     <v-box
-      bg="aliceblue"
+      bg="red"
       :p="3"
       :mb="4"
       :width="[
