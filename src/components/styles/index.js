@@ -42,12 +42,14 @@ const Box = (props, theme) => {
   );
 };
 
-const Flex = (props, theme) =>
-  styled("div")(
+const Flex = (props, theme) => {
+  const tag = props.tag ? props.tag : "div";
+  return styled(tag)(
     [],
     { display: "flex" },
     ...boxStyles(props, theme),
     ...flexStyles(props)
   );
+};
 
 export { Box, Flex };
