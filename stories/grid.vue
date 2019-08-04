@@ -70,3 +70,11 @@
     <v-box bg="aliceblue" :my="4">:my="4"</v-box>
   </v-flex>
 </story>
+
+<story name="CustomTags">
+  <v-flex tag="article" flexWrap="wrap" maxWidth="960px" mx="auto">
+    <v-box tag="main" :width="[1, 1/2]" :px="[0, 1]" :mb="2">
+      <v-flex alignItems="center" justifyContent="center" bg="aliceblue" :py="4">Main within article</v-flex>
+    </v-box>
+  </v-flex>
+</story>
